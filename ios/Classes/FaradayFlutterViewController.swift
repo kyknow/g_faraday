@@ -66,7 +66,7 @@ open class FaradayFlutterViewController: FlutterViewController, UINavigationCont
         }
     }
     
-    public func callbackValueToCreator(_ value: Any?) {
+    open func callbackValueToCreator(_ value: Any?) {
         if let cb = callback {
           cb(value)
           callback = nil
