@@ -93,7 +93,7 @@ open class FaradayFlutterViewController: FlutterViewController, UINavigationCont
     
     open override func viewDidAppear(_ animated: Bool) {
         interactivePopGestureRecognizerDelegate = navigationController?.interactivePopGestureRecognizer?.delegate
-        navigationController?.interactivePopGestureRecognizer?.delegate = nil
+//        navigationController?.interactivePopGestureRecognizer?.delegate = nil
         let isEnabled = navigationController?.interactivePopGestureRecognizer?.isEnabled ?? false
         navigationController?.interactivePopGestureRecognizer?.isEnabled = false
         if (isEnabled && (navigationController?.viewControllers.count ?? 0) > 1) {
